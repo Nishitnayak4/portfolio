@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Projects | Nishit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    html, body {
+  margin-top:3% ;
+  padding: 0;}
+
+    .card-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.tilt-card {
+  width: 260px;
+  height: 320px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.15);
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.tilt-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--x) var(--y),
+    rgba(0,255,255,0.25),
+    transparent 60%);
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: inherit;
+}
+
+.tilt-card:hover::before {
+  opacity: 1;
+}
+
+.tilt-card h2 {
+  transform: translateZ(40px);
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.tilt-card p {
+  margin: 15px 0;
+  opacity: 0.8;
+  transform: translateZ(25px);
+}
+
+.tilt-card span {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #00f0ff;
+  transform: translateZ(30px);
+}
+</style>
+<body>
+<canvas id="bg"></canvas>
+<div id="cursor"></div>
+
+
+<nav class="navbar">
+  <div class="nav-logo">Nishit</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+  </ul>
+
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+
+<div class="card-container">
+  <div class="tilt-card">
+    <h2>01</h2>
+    <p>Taarangan which was a fest in our college.The events website was created by me</p>
+    <span><a href="tempory-rho.vercel.app" target="_blank" style="color: #00f0ff;text-decoration:none;">View Project →</a></span>
+  </div>
+
+  <div class="tilt-card">
+    <h2>02</h2>
+    <p>I have created my friends portfolio.Using JS, CSS and HTML</p>
+    <span><a href="https://vanshiyerportfolio.site/" target="_blank" style="color: #00f0ff;text-decoration:none;">View Project →</a></span>
+  </div>
+
+  <div class="tilt-card">
+    <h2>03</h2>
+    <p>Creative Frontend Experience</p>
+    <span><a href="#" target="_blank" style="color: #00f0ff;text-decoration:none;">View Project →</a></span>
+  </div>
+</div>
+
+
+<script src="bg.js"></script>
+<script src="cursor.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
