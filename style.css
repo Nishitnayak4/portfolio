@@ -1282,7 +1282,7 @@ h2 {
 
   .hero-animation {
     height: 380px; /* IMPORTANT */
-    overflow-y: hidden;
+    overflow: hidden;
   }
 }
 
@@ -1314,4 +1314,5 @@ h2 {
     height: 390px; /* was 300px */
   }
 }
+
 
