@@ -325,7 +325,7 @@ h2 {
 
 .experience-card p {
   margin: 5px 0;
-  color: #f56733;
+  color: #d17e60;
 }
 
 
@@ -338,7 +338,7 @@ h2 {
   width: 800px;
   height: 600px;
   overflow: hidden;
-
+  
   --time: 22s;
 }
 
@@ -1253,28 +1253,65 @@ h2 {
   }
 }
 
+.hero-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media (max-width: 1024px) {
-  .frame {
-    transform: scale(0.8);
-    transform-origin: top center;
+
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-animation {
+    margin-top: -1px;
   }
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 768px) {
   .frame {
-    transform: scale(0.8);
+    transform: scale(0.55);
     transform-origin: top center;
+   
+   
+  }
+
+  .hero-animation {
+    height: 380px; /* IMPORTANT */
+    overflow-y: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .frame {
+    transform: scale(0.12);
+  }
+
+  .hero-animation {
+    height: 380px;
   }
 }
 @media (max-width: 768px) {
   .frame {
-    transform: scale(0.6);
+    transform: scale(0.62); /* was 0.55 */
     transform-origin: top center;
+  }
+
+  .hero-animation {
+    height: 440px; /* was 380px */
   }
 }
 @media (max-width: 480px) {
   .frame {
-    transform: scale(0.45);
-    transform-origin: top center;
+    transform: scale(0.98); /* was 0.42 */
+  }
+
+  .hero-animation {
+    height: 390px; /* was 300px */
   }
 }
+
