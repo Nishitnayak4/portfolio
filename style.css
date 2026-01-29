@@ -1269,6 +1269,7 @@ h2 {
 
   .hero-animation {
     margin-top: -1px;
+    display: none;
   }
 }
 
@@ -1282,7 +1283,7 @@ h2 {
 
   .hero-animation {
     height: 380px; /* IMPORTANT */
-    overflow: hidden;
+    overflow-y: hidden;
   }
 }
 
@@ -1314,5 +1315,4 @@ h2 {
     height: 390px; /* was 300px */
   }
 }
-
 
