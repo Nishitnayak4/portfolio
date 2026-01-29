@@ -1277,42 +1277,49 @@ h2 {
   .frame {
     transform: scale(0.55);
     transform-origin: top center;
-   
+    display: none;
    
   }
 
   .hero-animation {
     height: 380px; /* IMPORTANT */
     overflow-y: hidden;
+     display: none;
   }
 }
 
 @media (max-width: 480px) {
   .frame {
     transform: scale(0.12);
+     display: none;
   }
 
   .hero-animation {
     height: 380px;
+     display: none;
   }
 }
 @media (max-width: 768px) {
   .frame {
     transform: scale(0.62); /* was 0.55 */
     transform-origin: top center;
+     display: none;
   }
 
   .hero-animation {
     height: 440px; /* was 380px */
+     display: none;
   }
 }
 @media (max-width: 480px) {
   .frame {
     transform: scale(0.98); /* was 0.42 */
+     display: none;
   }
 
   .hero-animation {
     height: 390px; /* was 300px */
+     display: none;
   }
 }
 
